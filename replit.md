@@ -11,23 +11,22 @@ Preferred communication style: Simple, everyday language.
 ## System Architecture
 
 ### Frontend Architecture
-- **Framework**: React 18 with TypeScript
-- **Build Tool**: Vite for fast development and optimized builds
+- **Framework**: Next.js 15 with React 18 and TypeScript
+- **Build Tool**: Next.js built-in bundler with Turbopack
 - **Styling**: Tailwind CSS with custom CSS variables for theming
 - **UI Components**: Radix UI primitives with shadcn/ui component library
 - **Animations**: Framer Motion for smooth transitions and scroll-triggered animations
 - **State Management**: React hooks and context for theme and search functionality
 - **Data Fetching**: TanStack React Query for server state management
-- **Routing**: Wouter for lightweight client-side routing
+- **Routing**: Next.js App Router with file-based routing
 - **Forms**: React Hook Form with Zod validation
 
 ### Backend Architecture
-- **Runtime**: Node.js with Express.js
+- **Runtime**: Next.js serverless functions (No Express server)
 - **Language**: TypeScript with ES modules
-- **Database**: PostgreSQL with Drizzle ORM
-- **Database Provider**: Neon Database (serverless PostgreSQL)
-- **Storage Layer**: Abstracted storage interface with in-memory implementation for development
-- **Build System**: ESBuild for server-side bundling
+- **Database**: No database (removed all database dependencies)
+- **Storage Layer**: No storage layer (static portfolio site)
+- **Build System**: Next.js built-in bundler
 
 ### Key Components
 
